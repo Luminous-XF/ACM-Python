@@ -1,0 +1,17 @@
+class Solution(object):
+    def breakPalindrome(self, palindrome: str) -> str:
+        """
+        :type palindrome: str
+        :rtype: str
+        """
+
+        n = len(palindrome)
+
+        if n == 1:
+            return ""
+
+        for i in range(n // 2):
+            if palindrome[i] != 'a':
+                return palindrome[:i] + "a" + palindrome[i + 1:]
+
+        return palindrome[:n - 1] + "b"
