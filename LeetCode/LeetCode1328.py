@@ -1,10 +1,5 @@
 class Solution(object):
     def breakPalindrome(self, palindrome: str) -> str:
-        """
-        :type palindrome: str
-        :rtype: str
-        """
-
         n = len(palindrome)
 
         if n == 1:
